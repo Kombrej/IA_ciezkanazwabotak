@@ -1,0 +1,37 @@
+
+.table {
+    table{
+    margin-left: 10px;
+    border-style:solid;
+    border-width: 5px;
+    border-collapse: collapse;
+    width: 99%;
+    margin-left: 20;
+    margin-bottom: 50;
+    background-color: rgb(255, 255, 255);
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+th, td {
+    text-align: center;
+    vertical-align: center;
+}
+
+th {
+    background-color: #ffffff;
+    height: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    height: 50px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+}

@@ -1,0 +1,30 @@
+{% extends "WorkTime/base.html"%} 
+
+<head><title> Home </title>
+</head>
+{% block content %}
+<div style="overflow-x:auto;">
+<table class=table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Shift Type</th>
+            <th>Shift started</th>
+            <th>Shift ended</th>
+            <th>overtime</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for staff in WorkTimehoursT%}
+        <tr>
+            <td>{{staff.name}}</td>
+            <td>{{staff.surname}}</td>
+            <td>{{staff.shift_type}}</td>
+            <td>{{staff.shift_started}}</td>
+            <td>{{staff.shift_ended}}</td>
+        </tr>
+
+{% endfor %}
+    </div>
+{% endblock %}
